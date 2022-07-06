@@ -1,0 +1,17 @@
+{
+	"selector": "source.java",
+	"variants": [
+		{
+			"name": "Build",
+			"cmd": ["/home/user/Source/jdk-18.0.1.1/bin/javac", "$file"]
+		},
+		{
+			"name": "Run",
+			"shell_cmd": "konsole -e bash -c '/home/user/Source/jdk-18.0.1.1/bin/java $file;bash'"
+		},
+		{
+			"name": "Build and Run",
+			"shell_cmd": "/home/user/Source/jdk-18.0.1.1/bin/javac $file && /usr/bin/konsole -e bash -c '/home/user/Source/jdk-18.0.1.1/bin/java $file;bash'"
+		}
+	]
+}
